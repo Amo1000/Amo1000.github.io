@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </nav>
+    <div class="aboutmecontainer">
+        <section class="about-me">
+            <div class="card2">
+                <img src="images/screenypfp.webp" alt="About Me" class="about-img" width="15%" height="15%">
+                <p>Hi, I'm Amo, also known as Amo101. I'm a low-poly 3D "artist" who likes making characters and minecraft models in my free time.</p>
+                <p>I make all of my models in blockbench but I like to render them in blender if i can</p>
+                <p>When I'm not making models I'm probably at school or doing some other project</p>
+                <p>This website's html and some CSS was made using chatGPT's website generator GPT since I am terrible at coding HTML</p>
+                <p>If you want me to make you a model submit it here, ill try to email you asap:</p>
+                <section class="contact-form">
+                    <h2>Request model</h2>
+                    <form  action="https://api.sheetmonkey.io/form/9WX6vsKVNAWRuryNRinirm" method="post" class="modelform">
+                        <input type="hidden" name="x-sheetmonkey-redirect" value="https://google.com" />
+                        <label>Your Name: <input type="text" name="Name" required /></label>
+                        <label>Your Email: <input type="email" name="Email" required /></label>
+                        <label>Your Request: <input type="text" name="Request" required /></label>
+                        <label>Extra info: <input type="text" name="Extra info"/></label>
+                        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                        <input type="submit" value="Send"/>
+                      </form>
+                    <p id="formResponse"></p>
+                </section>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>All models made by Amo, free to use.</p>
+    </footer>
+</body>
+</html>
