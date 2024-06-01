@@ -74,7 +74,7 @@ nav a:active {
     background: rgba(255, 255, 255, 0.35);
 }
 
-.hero, .aboutmecontainer, .requests{
+.hero, .aboutmecontainer, .requests {
     background: url(images/Wall.png) no-repeat center center/cover;
     height: 60vh;
     display: flex;
