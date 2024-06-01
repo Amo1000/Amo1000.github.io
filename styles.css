@@ -89,6 +89,8 @@ nav a:active {
     background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 15px;
+    width: 25%;
+    word-wrap: break-word;
     backdrop-filter: blur(10px);
     transition: transform 0.3s, opacity 0.3s;
     cursor: pointer;
