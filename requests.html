@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requests</title>
     <link rel="icon" type="image/x-icon" href="images/head.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/requests.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
@@ -17,25 +18,34 @@
         <a href="about.html">About</a>
         <a href="requests.html">Requests</a>
     </nav>
-    <div class="aboutmecontainer">
-        <section class="requests">
-            <div class="card2">
-                <section class="contact-form">
-                    <h2>Request model</h2>
-                    <form  action="https://api.sheetmonkey.io/form/9WX6vsKVNAWRuryNRinirm" method="post" class="modelform">
-                        <input type="hidden" name="x-sheetmonkey-redirect" value="https://amo1000.github.io/requests.html" />
-                        <label>Your Name: <input type="text" name="Name" required /></label>
-                        <label>Your Email: <input type="email" name="Email" required /></label>
-                        <label>Your Request: <input type="text" name="Request" required /></label>
-                        <label>Extra info: <input type="text" name="Extra info"/></label>
-                        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-                        <input type="submit" value="Send"/>
-                      </form>
-                    <p id="formResponse"></p>
-                </section>
-            </div>
-        </section>
-    </div>
+    <section class="requests">
+        <div class="card2">
+            <section class="contact-form">
+                <h2>Request model</h2>
+                <form action="https://api.sheetmonkey.io/form/9WX6vsKVNAWRuryNRinirm" method="post" class="modelform">
+                    <input type="hidden" name="x-sheetmonkey-redirect" value="https://amo1000.github.io/requests.html" />
+                    <br />
+                    <br />
+                    <label>Your Name: <input type="text" name="Name" required /></label>
+                    <br />
+                    <br />
+                    <label>Your Email: <input type="email" name="Email" required /></label>
+                    <br />
+                    <br />
+                    <label>Your Request: <input type="text" name="Request" required /></label>
+                    <br />
+                    <br />
+                    <label>Extra info: <input type="text" name="Extra info"/></label>
+                    <br />
+                    <br />
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    <br />
+                    <input type="submit" value="Send"/>
+                </form>
+                <p id="formResponse"></p>
+            </section>
+        </div>
+    </section>
     <footer>
         <p>All models made by Amo, free to use.</p>
     </footer>

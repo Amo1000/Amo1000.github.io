@@ -1,12 +1,17 @@
 @font-face {
     font-family: sfpro;
-    src: url(fonts/SFPRODISPLAYREGULAR.OTF);
+    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
 @font-face {
     font-family: sfprobold;
-    src: url(fonts/SFPRODISPLAYBOLD.OTF);
+    src: url(../fonts/SFPRODISPLAYBOLD.OTF);
     font-weight: bold;
+}
+
+a {
+    color: #c9c9c9;
+    text-decoration: none;
 }
 
 body {
@@ -67,4 +72,9 @@ nav a:hover {
 
 nav a:active {
     background: rgba(255, 255, 255, 0.35);
+}
+
+::selection{
+    background-color: #ffffffaa;
+    color: #000;
 }
