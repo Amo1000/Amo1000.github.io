@@ -221,14 +221,3 @@ footer {
     border-width: 0px;
     transition: padding 0.3s;
 }
-
-::file-selector{
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    color: #fff;
-    padding: 0.15rem;
-    padding-left: 0.4rem;
-    border-radius: 15px;
-    border-width: 0px;
-    transition: padding 0.3s;
-}
