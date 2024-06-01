@@ -9,6 +9,11 @@
     font-weight: bold;
 }
 
+a {
+    color: #ffffffaa;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     font-family: sfpro;
