@@ -226,3 +226,22 @@ footer {
     border-width: 0px;
     transition: padding 0.3s;
 }
+
+.bg {
+    background: linear-gradient(270deg,#2c2c2c,#141414,#435b5b,#2e2e2e);
+    background-size: 240% 240%;
+    animation: gradient-animation 20s ease infinite;
+}
+  
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
