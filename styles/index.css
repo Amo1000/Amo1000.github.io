@@ -1,0 +1,80 @@
+@font-face {
+    font-family: sfpro;
+    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: sfprobold;
+    src: url(../fonts/SFPRODISPLAYBOLD.OTF);
+    font-weight: bold;
+}
+
+a {
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: sfpro;
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+strong {
+    font-family: sfprobold;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 0.1rem 0;
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 175;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: backdrop-filter 0.3s;
+}
+
+footer {
+    z-index: 0;
+}
+
+nav:hover {
+    backdrop-filter: blur(20px);
+}
+
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+nav a:active {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+::selection{
+    background-color: #ffffffaa;
+    color: #000;
+}

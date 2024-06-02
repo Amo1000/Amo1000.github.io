@@ -1,0 +1,68 @@
+.requests {
+    background: url(../images/Wall.png) no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.modelform {
+    align-items: center;
+    text-align: left;
+    width: 50%;
+    margin: auto;
+}
+
+.modelform input {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 0.15rem;
+    padding-left: 0.4rem;
+    border-radius: 15px;
+    border-width: 0px;
+    transition: padding 0.3s;
+}
+
+.modelform input:focus, .modelform input:nth-child(7){
+    padding: 0.25rem;
+}
+
+::file-selector-button{ /* amo where is this used */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 0.15rem;
+    padding-left: 0.4rem;
+    border-radius: 15px;
+    border-width: 0px;
+    transition: padding 0.3s;
+}
+
+.card2 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    transition: transform 0.3s;
+    padding: 1rem;
+    border-radius: 15px;
+    max-width: 50%;
+    transform-origin: 0 0;
+
+}
+
+.card2 h2{
+    font-family: sfprobold;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem 0;
+}

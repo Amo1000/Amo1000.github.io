@@ -1,0 +1,73 @@
+.aboutmecontainer {
+    background: url(../images/Wall.png) no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card2 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    transition: transform 0.3s;
+    padding: 1rem;
+    border-radius: 15px;
+    transform-origin: 0 0;
+
+}
+
+.card2 h2{
+    font-family: sfprobold;
+}
+
+.card2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card2 img:hover {
+    transform: scale(1.035);
+    z-index: 51;
+}
+
+.card2 img:active {
+    transform: scale(1.35);
+    z-index: 100;
+}
+
+.card2 img {
+    border-radius: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem 0;
+}
