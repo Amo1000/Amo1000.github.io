@@ -1,3 +1,7 @@
+nav{
+    z-index: 49 !important;
+}
+
 .container {
     max-width: 1200px;
     margin: 2rem auto;
@@ -37,7 +41,7 @@
 
 .card:hover {
     transform: scale(1.2);
-    z-index: 50;
+    z-index: 40;
     filter: blur(.0px)
 }
 
@@ -51,12 +55,12 @@
 
 .card img:hover, .card2 img:hover {
     transform: scale(1.035);
-    z-index: 51;
+    z-index: 40;
 }
 
 .card img:active, .card2 img:active {
     transform: scale(1.35);
-    z-index: 100;
+    z-index: 100 !important;
 }
 
 .card2 img {
@@ -90,4 +94,16 @@ footer {
     background: linear-gradient(270deg,#2c2c2c,#141414,#435b5b,#2e2e2e);
     background-size: 240% 240%;
     animation: gradient-animation 20s ease infinite;
+}
+
+.bg .card{
+    transition: all 0.3s;
+}
+
+.bg:active .card {
+    filter: blur(11px);
+}
+  
+.bg .card:active {
+    filter: blur(0);
 }
