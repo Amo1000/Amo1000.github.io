@@ -1,5 +1,5 @@
 nav{
-    z-index: 49 !important;
+    z-index: 49;
 }
 
 .container {
@@ -106,8 +106,5 @@ footer {
   
 .bg .card:active {
     filter: blur(0);
-}
-
-.card img:active{
     z-index: 100 !important;
 }
