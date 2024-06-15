@@ -1,5 +1,5 @@
-nav, header{
-    z-index: 49;
+nav{
+    z-index: 49 !important;
 }
 
 .container {
@@ -108,8 +108,20 @@ footer {
 .bg:active .card {
     filter: blur(11px);
 }
+
+.bg:active h1 {
+    filter: blur(11px);
+}
   
 .bg .card:active {
     filter: blur(0);
-    z-index: 100 !important;
+}
+
+h1{
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.bg h1:active {
+    filter: blur(0);
 }
