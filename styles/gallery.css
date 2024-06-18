@@ -101,7 +101,7 @@ footer {
     animation: gradient-animation 20s ease infinite;
 }
 
-.bg .card{
+.bg .card, .bg .card2{
     transition: all 0.3s;
 }
 
@@ -124,4 +124,12 @@ h1{
 
 .bg h1:active {
     filter: blur(0);
+}
+
+.bg:active .card2 {
+    filter: blur(11px);
+}
+
+a p{
+    text-align: center;
 }
