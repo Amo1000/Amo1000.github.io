@@ -2,7 +2,7 @@ nav{
     z-index: 49 !important;
 }
 
-.container {
+.container, .containerBin{
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 2rem;
@@ -17,6 +17,26 @@ nav{
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+.containerBin img{
+    float: left;
+}
+
+.containerBin h1{
+    text-align: center;
+    font-family: sfprobold;
+    font-size: x-large;
+    text-decoration: underline !important;
+}
+
+.containerBin .card{
+    transition: none !important;
+}
+
+.containerBin .card:hover{
+    transform: scale(1) !important;
+}
+
 
 .card {
     background: rgba(255, 255, 255, 0.1);
@@ -132,4 +152,8 @@ h1{
 
 a p{
     text-align: center;
+}
+
+.containerBin h1{
+    filter: blur(0);
 }
