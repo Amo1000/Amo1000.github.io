@@ -3,9 +3,9 @@ nav{
 }
 
 .container, .containerBin{
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    max-width: 1200px !important;
+    margin: 2rem auto !important;
+    padding: 0 2rem !important;
 }
 
 .containeroutside{
