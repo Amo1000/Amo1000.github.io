@@ -7,20 +7,6 @@
     <link rel="icon" type="image/x-icon" href="images/head.png">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/home.css">
-    <script type = "text/javascript">
-        function displayNextImage() {
-            x = (x === images.length - 1) ? 0 : x + 1;
-            document.getElementById("img").src = images[x];
-        }
-        function changeImage() {
-            setInterval(displayNextImage, 5000);
-        }
-  
-        var images = [], x = -1;
-        images[0] = "images/Wall.png";
-        images[1] = "images/idk.png";
-        images[2] = "images/gibson.png";
-    </script>
 </head>
 <body>
     <header>
