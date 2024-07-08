@@ -78,3 +78,53 @@ nav a:active {
     background-color: #ffffffaa;
     color: #000;
 }
+
+.containerBin img{
+    float: left;
+}
+
+.containerBin h1{
+    text-align: center;
+    font-family: sfprobold;
+    font-size: x-large;
+    text-decoration: underline !important;
+}
+
+.container, .containerBin{
+    max-width: 1200px !important;
+    margin: 2rem auto !important;
+    padding: 0 2rem !important;
+}
+
+.containeroutside{
+    padding-top: 30px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.containerBin img{
+    float: left;
+}
+
+.containerBin h1{
+    text-align: center;
+    font-family: sfprobold;
+    font-size: x-large;
+    text-decoration: underline !important;
+}
+
+.containerBin p{
+    text-align: center;
+}
+
+.containerBin .card{
+    transition: none !important;
+}
+
+.containerBin .card:hover{
+    transform: scale(1) !important;
+}
