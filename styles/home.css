@@ -1,12 +1,15 @@
 .hero, .aboutmecontainer, .requests {
     background: url(../images/Wall.png) no-repeat center center/cover;
     height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     text-align: center;
-    
 }
 
 .hero-content {
