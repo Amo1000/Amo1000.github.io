@@ -7,6 +7,20 @@
     <link rel="icon" type="image/x-icon" href="images/head.png">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/home.css">
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+        function changeImage() {
+            setInterval(displayNextImage, 5000);
+        }
+  
+        var images = [], x = -1;
+        images[0] = "images/Wall.png";
+        images[1] = "images/idk.png";
+        images[2] = "images/gibson.png";
+    </script>
 </head>
 <body>
     <header>
@@ -40,6 +54,17 @@
               <img src="images/kuky.webp" alt="3D Model">
               <h2>Kuky</h2>
               <p>A 3D model of my friend Kuky.</p>
+            </div>
+        </section>
+    </div>
+    <div class="containerBin">
+        <section class="content">
+            <div class="card">
+                <a href="bin.html">
+                    <img src="images/bin.png" alt="The Bin" width="25%" height="25%">
+                    <h1>The Bin</h1>
+                    <p>Click here to view old or unfinished models</p>
+                </a>
             </div>
         </section>
     </div>
