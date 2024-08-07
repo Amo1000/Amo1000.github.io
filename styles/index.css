@@ -14,6 +14,11 @@ a {
     text-decoration: none;
 }
 
+p a {
+    color: #4040af;
+    text-decoration: underline;
+}
+
 body {
     margin: 0;
     font-family: sfpro;
