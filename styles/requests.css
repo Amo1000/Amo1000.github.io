@@ -1,6 +1,6 @@
 .requests {
     background: url(../images/Wall.png) no-repeat center center/cover;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,26 +20,15 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     color: #fff;
-    padding: 0.15rem;
-    padding-left: 0.4rem;
-    border-radius: 15px;
-    border-width: 0px;
-    transition: padding 0.3s;
-}
-
-.modelform input:focus, .modelform input:nth-child(7){
     padding: 0.25rem;
-}
-
-::file-selector-button{ /* amo where is this used */
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    color: #fff;
-    padding: 0.15rem;
     padding-left: 0.4rem;
     border-radius: 15px;
     border-width: 0px;
     transition: padding 0.3s;
+}
+
+.submit{
+    cursor: pointer;
 }
 
 .card2 {
@@ -57,6 +46,7 @@
 
 .card2 h2{
     font-family: sfprobold;
+    font-size: xx-large;
 }
 
 footer {
