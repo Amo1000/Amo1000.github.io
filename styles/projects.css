@@ -1,0 +1,167 @@
+nav{
+    z-index: 49 !important;
+}
+
+.container, .containerBig{
+    max-width: 1200px !important;
+    margin: 2rem auto !important;
+    padding: 0 2rem !important;
+}
+
+.containeroutside{
+    padding-top: 30px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.containerBig img{
+    float: left;
+}
+
+.containerBig h1{
+    text-align: center;
+    font-family: sfprobold;
+    font-size: x-large;
+}
+
+.containerBig a h1{
+    text-decoration: underline;
+}
+
+.containerBig p{
+    text-align: center;
+    font-family: sfpro;
+}
+
+.containerBig .card{
+    transition: none !important;
+}
+
+.containerBig .card:hover{
+    transform: scale(1) !important;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    padding: 1rem;
+    transition: transform 0.3s;
+    border-radius: 15px;
+}
+
+.card2 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    transition: transform 0.3s;
+    padding: 1rem;
+    border-radius: 15px;
+    transform-origin: 0 0;
+
+}
+
+.card h2, .card2 h2{
+    font-family: sfprobold;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 40;
+    filter: blur(.0px)
+}
+
+.card img, .card2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card img:hover, .card2 img:hover {
+    transform: scale(1.035);
+    z-index: 40;
+}
+
+.card img:active, .card2 img:active {
+    transform: scale(1.35);
+    z-index: 100 !important;
+}
+
+.card2 img {
+    border-radius: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    color: #bbb;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem 0;
+}
+
+::selection{
+    background-color: #ffffffaa;
+    color: #000;
+}
+
+.bg {
+    background: linear-gradient(270deg,#30364c, #2c2c2c,#141414,#30364c, #2c2c2c);
+    background-size: 240% 240%;
+    animation: gradient-animation 20s ease infinite;
+}
+
+.bg .card, .bg .card2{
+    transition: all 0.3s;
+}
+
+.bg:active .card {
+    filter: blur(11px);
+}
+
+.bg:active h1 {
+    filter: blur(11px);
+}
+  
+.bg .card:active {
+    filter: blur(0);
+}
+
+h1{
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.bg h1:active {
+    filter: blur(0);
+}
+
+.bg:active .card2 {
+    filter: blur(11px);
+}
+
+a p{
+    text-align: center;
+}
+
+.containerBig h1{
+    filter: blur(0);
+}
