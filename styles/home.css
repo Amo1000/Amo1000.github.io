@@ -125,3 +125,9 @@ footer {
     background-color: #ffffffaa;
     color: #000;
 }
+
+h1{
+    text-align: center;
+    transition: all 0.3s;
+    font-family: sfprobold;
+}
