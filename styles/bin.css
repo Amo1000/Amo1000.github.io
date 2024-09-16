@@ -96,7 +96,7 @@ footer {
 }
 
 .bg {
-    background: linear-gradient(270deg,#2c2c2c,#141414,#909090,#2e2e2e);
+    background: linear-gradient(270deg,#2c2c2c,#141414,#907060,#2e2e2e);
     background-size: 240% 240%;
     animation: gradient-animation 20s ease infinite;
 }
