@@ -1,0 +1,16 @@
+{
+   "action": {
+      "default_popup": "index.html",
+      "default_title": "Golf Unlimited"
+   },
+   "description": "I have too much free time",
+   "icons": {
+      "128": "img/png/icon512.png",
+      "16": "img/png/icon512.png",
+      "48": "img/png/icon512.png"
+   },
+   "manifest_version": 3,
+   "name": "Golf Unlimited",
+   "update_url": "http://0.0.0.0",
+   "version": "1.0"
+}

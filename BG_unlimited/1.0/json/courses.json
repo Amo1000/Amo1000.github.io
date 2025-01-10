@@ -1,0 +1,142 @@
+{
+    "courses": [
+        {
+            "name": "Stonecreek",
+            "levels": [
+                { "url": "./json/levels/stonecreek-1.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-2.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-3.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-4.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-5.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-6.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-7.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-8.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-9.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-10.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-11.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-12.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-13.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-14.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-15.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-16.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-17.json", "reward": 3 },
+                { "url": "./json/levels/stonecreek-18.json", "reward": 5 }
+            ]
+        },
+        {
+            "name": "Flagstaff",
+            "levels": [
+                { "url": "./json/levels/flagstaff-1.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-2.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-3.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-4.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-5.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-6.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-7.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-8.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-9.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-10.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-11.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-12.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-13.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-14.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-15.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-16.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-17.json", "reward": 3 },
+                { "url": "./json/levels/flagstaff-18.json", "reward": 5 }
+            ]
+        },
+        {
+            "name": "Phoenix",
+            "levels": [
+                { "url": "./json/levels/phoenix-1.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-2.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-3.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-4.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-5.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-6.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-7.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-8.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-9.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-10.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-11.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-12.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-13.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-14.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-15.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-16.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-17.json", "reward": 3 },
+                { "url": "./json/levels/phoenix-18.json", "reward": 5 }
+            ]
+        },
+        {
+            "name": "Purple Moon",
+            "levels": [
+                { "url": "./json/levels/moon-1.json", "reward": 3 },
+                { "url": "./json/levels/moon-2.json", "reward": 3 },
+                { "url": "./json/levels/moon-3.json", "reward": 3 },
+                { "url": "./json/levels/moon-4.json", "reward": 3 },
+                { "url": "./json/levels/moon-5.json", "reward": 3 },
+                { "url": "./json/levels/moon-6.json", "reward": 3 },
+                { "url": "./json/levels/moon-7.json", "reward": 3 },
+                { "url": "./json/levels/moon-8.json", "reward": 3 },
+                { "url": "./json/levels/moon-9.json", "reward": 3 },
+                { "url": "./json/levels/moon-10.json", "reward": 3 },
+                { "url": "./json/levels/moon-11.json", "reward": 3 },
+                { "url": "./json/levels/moon-12.json", "reward": 3 },
+                { "url": "./json/levels/moon-13.json", "reward": 3 },
+                { "url": "./json/levels/moon-14.json", "reward": 3 },
+                { "url": "./json/levels/moon-15.json", "reward": 3 },
+                { "url": "./json/levels/moon-16.json", "reward": 3 },
+                { "url": "./json/levels/moon-17.json", "reward": 3 },
+                { "url": "./json/levels/moon-18.json", "reward": 5 }
+            ]
+        },
+        {
+            "name": "Depths",
+            "levels": [
+                { "url": "./json/levels/cave-1.json", "reward": 3 },
+                { "url": "./json/levels/cave-2.json", "reward": 3 },
+                { "url": "./json/levels/cave-3.json", "reward": 3 },
+                { "url": "./json/levels/cave-4.json", "reward": 3 },
+                { "url": "./json/levels/cave-5.json", "reward": 3 },
+                { "url": "./json/levels/cave-6.json", "reward": 3 },
+                { "url": "./json/levels/cave-7.json", "reward": 3 },
+                { "url": "./json/levels/cave-8.json", "reward": 3 },
+                { "url": "./json/levels/cave-9.json", "reward": 3 },
+                { "url": "./json/levels/cave-10.json", "reward": 3 },
+                { "url": "./json/levels/cave-11.json", "reward": 3 },
+                { "url": "./json/levels/cave-12.json", "reward": 3 },
+                { "url": "./json/levels/cave-13.json", "reward": 3 },
+                { "url": "./json/levels/cave-14.json", "reward": 3 },
+                { "url": "./json/levels/cave-15.json", "reward": 3 },
+                { "url": "./json/levels/cave-16.json", "reward": 3 },
+                { "url": "./json/levels/cave-17.json", "reward": 3 },
+                { "url": "./json/levels/cave-18.json", "reward": 5 }
+            ]
+        },
+        {
+            "name": "Sky Islands",
+            "levels": [
+                { "url": "./json/levels/sky-1.json", "reward": 3 },
+		        { "url": "./json/levels/sky-2.json", "reward": 3 },
+		        { "url": "./json/levels/sky-3.json", "reward": 3 },
+		        { "url": "./json/levels/sky-4.json", "reward": 3 },
+		        { "url": "./json/levels/sky-5.json", "reward": 3 },
+		        { "url": "./json/levels/sky-6.json", "reward": 3 },
+		        { "url": "./json/levels/sky-7.json", "reward": 3 },
+		        { "url": "./json/levels/sky-8.json", "reward": 3 },
+		        { "url": "./json/levels/sky-9.json", "reward": 3 },
+                { "url": "./json/levels/sky-10.json", "reward": 3 },
+			    { "url": "./json/levels/sky-11.json", "reward": 3 },
+			    { "url": "./json/levels/sky-12.json", "reward": 3 },
+			    { "url": "./json/levels/sky-13.json", "reward": 3 },
+			    { "url": "./json/levels/sky-14.json", "reward": 3 },
+                { "url": "./json/levels/sky-15.json", "reward": 3 },
+                { "url": "./json/levels/sky-16.json", "reward": 3 },
+                { "url": "./json/levels/sky-17.json", "reward": 3 },
+                { "url": "./json/levels/sky-18.json", "reward": 5 }
+            ]
+        }
+    ]
+}

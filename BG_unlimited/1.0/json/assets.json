@@ -1,0 +1,1971 @@
+{
+    "audio": {
+        "ambience-birds": {
+            "url": "./resources/audio/ambience-birds.ogg",
+            "userData": {
+                "loop": true,
+                "volume": 0.25
+            }
+        },
+        "ambience-wind": {
+            "url": "./resources/audio/ambience-wind.ogg",
+            "userData": {
+                "loop": true,
+                "volume": 0.75
+            }
+        },
+        "ambience-hell": {
+            "url": "./resources/audio/ambience-hell.ogg",
+            "userData": {
+                "loop": true,
+                "volume": 0.5
+            } 
+        },
+        "ambience-space": {
+            "url": "./resources/audio/ambience-space.ogg",
+            "userData": {
+                "loop": true,
+                "volume": 0.5
+            }
+        },
+        "burn": {
+            "url": "./resources/audio/burn.ogg"
+        },
+        "cart": {
+            "url": "./resources/audio/cart.ogg"
+        },
+        "cart-jump": {
+            "url": "./resources/audio/cart-jump.ogg",
+            "userData": {
+                "volume": 0.5
+            }
+        },
+        "explosion": {
+            "url": "./resources/audio/explosion.ogg",
+            "userData": {
+                "volume": 0.75
+            }
+        },
+        "clap": {
+            "url": "./resources/audio/clap.ogg"
+        },
+        "grass-fairway": {
+            "url": "./resources/audio/grass-fairway.ogg",
+            "userData": {
+                "volume": 0.5
+            }
+        },
+        "grass-rough": {
+            "url": "./resources/audio/grass-rough.ogg",
+            "userData": {
+                "volume": 0.5
+            }
+        },
+        "hole": {
+            "url": "./resources/audio/hole.ogg"
+        },
+        "ice": {
+            "url": "./resources/audio/ice.ogg"
+        },
+        "leaves": {
+            "url": "./resources/audio/leaves.ogg"
+        },
+        "music-1": {
+            "url": "./resources/audio/music-1.ogg",
+            "userData": {
+                "loop": true
+            }
+        },
+        "music-4": {
+            "url": "./resources/audio/music-4.ogg",
+            "userData": {
+                "loop": true
+            }
+        },
+        "ping-1": {
+            "url": "./resources/audio/ping-1.ogg"
+        },
+        "ping-2": {
+            "url": "./resources/audio/ping-2.ogg"
+        },
+        "resize": {
+            "url": "./resources/audio/resize.ogg"
+        },
+        "sand": {
+            "url": "./resources/audio/sand.ogg",
+            "userData": {
+                "volume": 0.5
+            }
+        },
+
+        "snow-fairway": {
+            "url": "./resources/audio/grass-fairway.ogg",
+            "userData": {
+                "volume": 0.5
+            }
+        },
+        "swing-chip": {
+            "url": "./resources/audio/swing-chip.ogg"
+        },
+        "swing-fast": {
+            "url": "./resources/audio/swing-fast.ogg"
+        },
+        "swing-putt": {
+            "url": "./resources/audio/swing-putt.ogg"
+        },
+        "sword": {
+            "url": "./resources/audio/sword.ogg",
+            "userData": {
+                "volume": 0.25
+            }
+        },
+        "teleport": {
+            "url": "./resources/audio/teleport.ogg"
+        },
+        "tree": {
+            "url": "./resources/audio/tree.ogg"
+        },
+        "ufo": {
+            "url": "./resources/audio/ufo.ogg"
+        },
+        "water": {
+            "url": "./resources/audio/water.ogg"
+        },
+        "wood": {
+            "url": "./resources/audio/wood.ogg"
+        }
+    },
+    "models": {
+        "background-clouds": { "url": "./resources/models/background-clouds.glb" },
+        "background-hell": { "url": "./resources/models/background-hell.glb" },
+        "background-snow": { "url": "./resources/models/background-snow.glb" },
+        "background-space": { "url": "./resources/models/background-space.glb" },
+	"background-cave": { "url": "./resources/models/background-cave.glb" },
+        "ball": { "url": "./resources/models/ball.glb" },
+        "bamboo": {
+            "url": "./resources/models/bamboo.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75 }
+                }]
+            }
+        },
+        "bounce-down": {
+            "url": "./resources/models/bounce.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "force", "value": { "x": 0, "y": 0, "z": -2 }, "audio": "cart-jump" },
+                    "position": { "x": 0, "y": 0, "z": -0.5 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.25 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.5,
+                "rotation": { "x": 0, "y": 3.141592653589793, "z": 0 },
+                "surface": true,
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 3.141592653589793, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "bounce-left": {
+            "url": "./resources/models/bounce.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "force", "value": { "x": -2, "y": 0, "z": 0 }, "audio": "cart-jump"},
+                    "position": { "x": -0.5, "y": 0, "z": 0 },
+                    "scale": { "x": 0.25, "y": 0.75, "z": 0.75 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.5,
+                "rotation": { "x": 0, "y": -1.5707963267948966, "z": 0 },
+                "surface": true,
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.5, "y": -1.5707963267948966, "z": 0 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "bounce-right": {
+            "url": "./resources/models/bounce.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "force", "value": { "x": 2, "y": 0, "z": 0 }, "audio": "cart-jump"},
+                    "position": { "x": 0.5, "y": 0, "z": 0 },
+                    "scale": { "x": 0.25, "y": 0.75, "z": 0.75 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.5,
+                "rotation": { "x": 0, "y": 1.5707963267948966, "z": 0 },
+                "surface": true,
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 1.5707963267948966, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "bounce-up": {
+            "url": "./resources/models/bounce.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "force", "value": { "x": 0, "y": 0, "z": 2 }, "audio": "cart-jump"},
+                    "position": { "x": 0, "y": 0, "z": 0.5 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.25 }
+                }],
+                "friction": 0.05,
+                "order": 6,
+                "restitution": 0.5,
+                "surface": true,
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "bricks": {
+            "url": "./resources/models/bricks.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.05,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 0.75
+            }
+        },
+        "bricks-wall": {
+            "url": "./resources/models/bricks-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "cactus-saguaro-bottom": {
+            "url": "./resources/models/cactus-saguaro-bottom.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "cactus-saguaro-center-left": {
+            "url": "./resources/models/cactus-saguaro-center-left.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "cactus-saguaro-center-right": {
+            "url": "./resources/models/cactus-saguaro-center-right.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "cactus-saguaro-top": {
+            "url": "./resources/models/cactus-saguaro-top.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "carpet-red": {
+            "url": "./resources/models/carpet-red.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.5,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-rough" }}],
+                "restitution": 0.45
+            }
+        },
+        "cart": {
+            "url": "./resources/models/cart.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "cart" },
+                    "position": { "x": 0, "y": 0, "z": -0.5 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }],
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "checkpoint": {
+            "url": "./resources/models/checkpoint.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "checkpoint", "audio": "clap" }
+                }],
+                "tags": "special"
+            }
+        },
+        "club-putter": { "url": "./resources/models/club-putter.glb" },
+        "club-driver": { "url": "./resources/models/club-driver.glb" },
+        "concrete": {
+            "url": "./resources/models/concrete.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.15,
+                "restitution": 0
+            }
+        },
+        "conveyor": {
+            "url": "./resources/models/conveyor.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0,
+                "hitbox": [
+                    { 
+                        "action": { "type": "move", "value": { "x": 1, "y": 0, "z": 0 }},
+                        "position": { "x": 0, "y": 0, "z": 0.5 },
+                        "scale": { "x": 0.5, "y": 0.5, "z": 0.25 }
+                    },
+                    { 
+                        "action": { "type": "move", "value": { "x": 0, "y": 0, "z": -1 }},
+                        "position": { "x": 0.5, "y": 0, "z": 0 },
+                        "scale": { "x": 0.25, "y": 0.5, "z": 0.5 }
+                    },
+                    { 
+                        "action": { "type": "move", "value": { "x": -1, "y": 0, "z": 0 }},
+                        "position": { "x": 0, "y": 0, "z": -0.5 },
+                        "scale": { "x": 0.5, "y": 0.5, "z": 0.25 }
+                    },
+                    { 
+                        "action": { "type": "move", "value": { "x": 0, "y": 0, "z": 1 }},
+                        "position": { "x": -0.5, "y": 0, "z": 0 },
+                        "scale": { "x": 0.25, "y": 0.5, "z": 0.5 }
+                    }
+                ],
+                "material": {
+                    "map": {
+                        "offset": { "x": -1, "y": 0 }
+                    },
+                    "name": "conveyor-belt"
+                },
+                "restitution": 0,
+                "tags": "special",
+                "text": "5"
+            }
+        },
+        "crate": {
+            "url": "./resources/models/crate.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.05,
+                "restitution": 0.75
+            }
+        },
+        "crosshair": { "url": "./resources/models/crosshair.glb" },
+        "door": {
+            "url": "./resources/models/door.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "flag-hole": {
+            "url": "./resources/models/flag-hole.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [
+                    { 
+                        "action": { "type": "force", "value": { "x": 0, "y": 0, "z": -0.0625 }},
+                        "position": { "x": 0, "y": 0, "z": 0.5 },
+                        "scale": { "x": 1, "y": 1, "z": 0.25 }
+                    },
+                    { 
+                        "action": { "type": "finish", "audio": "hole" },
+                        "position": { "x": 0, "y": 0, "z": -0.5 },
+                        "scale": { "x": 0.5, "y": 0.5, "z": 0.25 }
+                    }
+                ],
+                "order": 9,
+                "tags": "special",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -4 }
+                }
+            }
+        },
+        "flag-par-3": {
+            "url": "./resources/models/flag-par-3.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -2 }
+                }
+            }
+        },
+        "flag-par-4": {
+            "url": "./resources/models/flag-par-4.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -2 }
+                }
+            }
+        },
+        "flag-par-5": {
+            "url": "./resources/models/flag-par-5.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -2 }
+                }
+            }
+        },
+        "flag-par-down": {
+            "url": "./resources/models/flag-par-down.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -2 }
+                }
+            }
+        },
+        "flag-par-left": {
+            "url": "./resources/models/flag-par-left.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -2 }
+                }
+            }
+        },
+        "flag-par-right": {
+            "url": "./resources/models/flag-par-right.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -2 }
+                }
+            }
+        },
+        "flag-par-up": {
+            "url": "./resources/models/flag-par-up.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": -0.5, "y": 0, "z": -2 }
+                }
+            }
+        },
+        "flowers": {
+            "url": "./resources/models/flowers.glb",
+            "userData": {
+                "body": "sensor",
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "flowers-hell": {
+            "url": "./resources/models/flowers-hell.glb",
+            "userData": {
+                "body": "sensor",
+                "material": {
+                    "map": {
+                        "offset": { "x": 0.5, "y": 0.5 }
+                    },
+                    "name": "flower-fire"
+                },
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "glass": {
+            "url": "./resources/models/glass.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.025,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 0.5
+            }
+        },
+        "glass-wall": {
+            "url": "./resources/models/glass-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "goo": {
+            "url": "./resources/models/goo.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ 
+                    "action": { "type": "goo", "audio": "water" }
+                }],
+                "restitution": 0,
+                "tags": "special"
+            }
+        },
+        "goo-ice": {
+            "url": "./resources/models/goo-ice.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ 
+                    "action": { "type": "goo", "audio": "water" }
+                }],
+                "restitution": 0,
+                "tags": "special"
+            }
+        },
+        "goo-fire": {
+            "url": "./resources/models/goo-fire.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ 
+                    "action": { "type": "goo", "audio": "water" }
+                }],
+                "material": {
+                    "map": {
+                        "offset": { "x": 0, "y": -0.25 }
+                    },
+                    "name": "goo-fire-border"
+                },
+                "restitution": 0,
+                "tags": "special"
+            }
+        },
+        "goo-moon": {
+            "url": "./resources/models/goo-moon.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ 
+                    "action": { "type": "goo", "audio": "water" }
+                }],
+                "restitution": 0,
+                "tags": "special"
+            }
+        },
+        "guide": {
+            "url": "./resources/models/guide.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "thumbnail": {
+                    "position": { "x": 0, "y": 0, "z": -2.5 }
+                }
+            }
+        },
+        "grass-fairway": {
+            "url": "./resources/models/grass-fairway.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.4,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "order": 1,
+                "restitution": 0.45
+            }
+        },
+        "grass-green": { "url": "./resources/models/grass-green.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.25,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "order": 2,
+                "restitution": 0.25
+            }
+        },
+        "grass-rough": {
+            "url": "./resources/models/grass-rough.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.5,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-rough" }}],
+                "order": 0,
+                "restitution": 0.25
+            }
+        },
+        "gravity": {
+            "url": "./resources/models/gravity.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "gravity", "audio": "teleport" }
+                }],
+                "tags": "special"
+            }
+        },
+	    "hat-taco man": {
+            "url": "./resources/models/hat-taco_man.glb",
+            "userData": {
+                "cost": 0,
+                "order": 20
+            }
+        },
+        "hat-toon outline": {
+            "url": "./resources/models/hat-toon.glb",
+            "userData": {
+                "cost": 0,
+                "order": 20
+            }
+        },
+        "hat-ruby's gun": {
+            "url": "./resources/models/hat-rubygun.glb",
+            "userData": {
+                "cost": 20,
+                "order": 20
+            }
+        },
+        "hat-Ember's eyes": {
+            "url": "./resources/models/hat-eyes.glb",
+            "userData": {
+                "cost": 20,
+                "order": 20
+            }
+        },
+        "hat-Charlie's Nuke": {
+            "url": "./resources/models/hat-nuke.glb",
+            "userData": {
+                "cost": 60,
+                "order": 20
+            }
+        },
+        "hat-Ball ball": {
+            "url": "./resources/models/hat-ball.glb",
+            "userData": {
+                "cost": 0,
+                "order": 21
+            }
+        },
+        "hat-Ball stack": {
+            "url": "./resources/models/hat-ballstack.glb",
+            "userData": {
+                "cost": 0,
+                "order": 21
+            }
+        },
+        "hat-Flying Pig": {
+            "url": "./resources/models/hat-pig.glb",
+            "userData": {
+                "cost": 200,
+                "order": 20
+            }
+        },
+	    "hat-screeny": {
+            "url": "./resources/models/hat-screeny.glb",
+            "userData": {
+                "cost": 101,
+                "order": 20
+            }
+        },
+        "hat-beach ball": {
+            "url": "./resources/models/hat-beach-ball.glb",
+            "userData": {
+                "cost": 200,
+                "order": 14
+            }
+        },
+        "hat-bomber": {
+            "url": "./resources/models/hat-bomber.glb",
+            "userData": {
+                "cost": 200,
+                "order": 15
+            }
+        },
+        "hat-boxel": {
+            "url": "./resources/models/hat-boxel.glb",
+            "userData": {
+                "cost": 0,
+                "order": 1
+            }
+        },
+        "hat-bread": {
+            "url": "./resources/models/hat-bread.glb",
+            "userData": {
+                "cost": 25,
+                "order": 2
+            }
+        },
+        "hat-bunny": {
+            "url": "./resources/models/hat-bunny.glb",
+            "userData": {
+                "cost": 25,
+                "order": 3
+            }
+        },
+        "hat-chains": {
+            "url": "./resources/models/hat-chains.glb",
+            "userData": {
+                "cost": 100,
+                "order": 6
+            }
+        },
+        "hat-cheese": {
+            "url": "./resources/models/hat-cheese.glb",
+            "userData": {
+                "cost": 1000,
+                "order": 17
+            }
+        },
+        "hat-clover": {
+            "url": "./resources/models/hat-clover.glb",
+            "userData": {
+                "cost": 25,
+                "order": 4
+            }
+        },
+        "hat-cowboy": {
+            "url": "./resources/models/hat-cowboy.glb",
+            "userData": {
+                "cost": 50,
+                "order": 5
+            }
+        },
+        "hat-doppler": {
+            "url": "./resources/models/hat-doppler.glb",
+            "userData": {
+                "cost": 200,
+                "order": 17
+            }
+        },
+        "hat-fire": {
+            "url": "./resources/models/hat-fire.glb",
+            "userData": {
+                "cost": 1000,
+                "material": {
+                    "map": {
+                        "offset": { "x": 0.5, "y": 0.5 }
+                    },
+                    "name": "hat-fire"
+                },
+                "order": 19
+            }
+        },
+        "hat-lucky": {
+            "url": "./resources/models/hat-lucky.glb",
+            "userData": {
+                "cost": 200,
+                "order": 7
+            }
+        },
+        "hat-mango": {
+            "url": "./resources/models/hat-mango.glb",
+            "userData": {
+                "cost": 25,
+                "order": 9
+            }
+        },
+        "hat-mouse": {
+            "url": "./resources/models/hat-mouse.glb",
+            "userData": {
+                "cost": 1000,
+                "order": 18
+            }
+        },
+        "hat-pizza": {
+            "url": "./resources/models/hat-pizza.glb",
+            "userData": {
+                "cost": 50,
+                "order": 8
+            }
+        },
+        "hat-potato": {
+            "url": "./resources/models/hat-potato.glb",
+            "userData": {
+                "cost": 25,
+                "order": 10
+            }
+        },
+        "hat-sombrero": {
+            "url": "./resources/models/hat-sombrero.glb",
+            "userData": {
+                "cost": 50,
+                "order": 11
+            }
+        },
+        "hat-suit": {
+            "url": "./resources/models/hat-suit.glb",
+            "userData": {
+                "cost": 200,
+                "order": 13
+            }
+        },
+        "hat-taco": {
+            "url": "./resources/models/hat-taco.glb",
+            "userData": {
+                "cost": 50,
+                "order": 12
+            }
+        },
+        "hell-fairway": {
+            "url": "./resources/models/hell-fairway.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.4,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "restitution": 0.45
+            }
+        },
+        "hell-green": { "url": "./resources/models/hell-green.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.25,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "restitution": 0.25
+            }
+        },
+        "hell-rough": {
+            "url": "./resources/models/hell-rough.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.5,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-rough" }}],
+                "restitution": 0.25
+            }
+        },
+        "hell-sand": {
+            "url": "./resources/models/hell-sand.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ "action": { "type": "audio", "audio": "sand" }}],
+                "restitution": 0.1
+            }
+        },
+        "hell-wall": {
+            "url": "./resources/models/hell-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "stone": {
+            "url": "./resources/models/stone.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.15,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 0.45
+            }
+        },
+        "stone-wall": {
+            "url": "./resources/models/stone-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "ice": {
+            "url": "./resources/models/ice.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.025,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 0.5
+            }
+        },
+        "ice-cube": {
+            "url": "./resources/models/ice-cube.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.025,
+                "hitbox": [{
+                    "action": { "type": "hide", "audio": "ice" }
+                }],
+                "restitution": 0.5,
+                "surface": true
+            }
+        },
+        "ice-spikes-down": {
+            "url": "./resources/models/ice-spikes.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.05,
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by ice spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": 0, "y": 0, "z": -0.5 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.25 }
+                }],
+                "restitution": 0.75,
+                "rotation": { "x": 0, "y": 3.141592653589793, "z": 0 },
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 3.141592653589793, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "ice-spikes-left": {
+            "url": "./resources/models/ice-spikes.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by ice spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": -0.5, "y": 0, "z": 0 },
+                    "scale": { "x": 0.25, "y": 0.75, "z": 0.75 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.75,
+                "rotation": { "x": 0, "y": -1.5707963267948966, "z": 0 },
+                "thumbnail": {
+                    "rotation": { "x": 0.5, "y": -1.5707963267948966, "z": 0 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "ice-spikes-right": {
+            "url": "./resources/models/ice-spikes.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by ice spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": 0.5, "y": 0, "z": 0 },
+                    "scale": { "x": 0.25, "y": 0.75, "z": 0.75 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.75,
+                "rotation": { "x": 0, "y": 1.5707963267948966, "z": 0 },
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 1.5707963267948966, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "ice-spikes-up": {
+            "url": "./resources/models/ice-spikes.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.05,
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by ice spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": 0, "y": 0, "z": 0.5 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.25 }
+                }],
+                "restitution": 0.75,
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "ice-wall": {
+            "url": "./resources/models/ice-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "lava": {
+            "url": "./resources/models/lava.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [
+                    { "action": { "type": "kill", "text": "You died by lava!<br>Penalty +1" }},
+                    { "action": { "type": "ignite", "audio": "burn" }}
+                ],
+                "material": {
+                    "map": {
+                        "offset": { "x": 0, "y": -0.25 }
+                    },
+                    "name": "lava"
+                }
+            }
+        },
+        "metal-frame": {
+            "url": "./resources/models/metal-frame.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.15,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 0.75
+            }
+        },
+        "meter": { "url": "./resources/models/meter.glb" },
+        "moon-fairway": {
+            "url": "./resources/models/moon-fairway.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.4,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "restitution": 0.45
+            }
+        },
+        "moon-green": { "url": "./resources/models/moon-green.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.25,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "restitution": 0.25
+            }
+        },
+        "moon-rough": {
+            "url": "./resources/models/moon-rough.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.5,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-rough" }}],
+                "restitution": 0.25
+            }
+        },
+        "moon-sand": {
+            "url": "./resources/models/moon-sand.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ "action": { "type": "audio", "audio": "sand" }}],
+                "restitution": 0.1
+            }
+        },
+        "moon-wall": {
+            "url": "./resources/models/moon-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "note": {
+            "url": "./resources/models/note.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "note" }
+                }],
+                "tags": "special",
+                "text": "?"
+            }
+        },
+        "out-of-bounds": {
+            "url": "./resources/models/out-of-bounds.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [
+                    { "action": { "type": "kill","text": "Out of bounds!<br>Penalty +1", "audio": "sword" }},
+                    { "action": { "type": "show" }}
+                ],
+                "tags": "special",
+		"order": 10,
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "solid-out-of-bounds": {
+            "url": "./resources/models/ghost-block.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [
+                    { "action": { "type": "show" }}
+                ],
+                "tags": "special"
+            }
+        },
+
+        "portal": {
+            "url": "./resources/models/portal.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "portal", "audio": "teleport" }
+                }],
+                "tags": "special",
+                "text": "001",
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "pumpkin": {
+            "url": "./resources/models/pumpkin.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "wood" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "sand": {
+            "url": "./resources/models/sand.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ "action": { "type": "audio", "audio": "sand" }}],
+                "order": 3,
+                "restitution": 0.1
+            }
+        },
+	"quicksand": {
+            "url": "./resources/models/sand2.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.1, "audio": "sand" }
+                }],
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+	"speed slide": {
+            "url": "./resources/models/speed-slide.glb",
+            "userData": {
+                "body": "static",
+                "friction": -0.75,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 0.45
+            }
+        },
+	"slide": {
+            "url": "./resources/models/slide.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 0.45
+            }
+        },
+	"bounce-slide": {
+            "url": "./resources/models/bounce-slide.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "restitution": 1
+            }
+        },
+	"Boost": {
+            "url": "./resources/models/boost.glb",
+            "userData": {
+                "body": "sensor",
+                "friction": 0,
+                "hitbox": [{ "action": { "type": "slow", "value": 2, "audio": "resize" }}],
+                "restitution": 0.45
+            }
+        },
+        "Slow": {
+            "url": "./resources/models/slow.glb",
+            "userData": {
+                "body": "sensor",
+                "friction": 0,
+                "hitbox": [{ "action": { "type": "slow", "value": 0.5, "audio": "resize" }}],
+                "restitution": 0.45
+            }
+        },
+        "Fog": {
+            "url": "./resources/models/fog.glb",
+            "userData": {
+                "body": "sensor",
+                "friction": 0.025,
+                "hitbox": [{
+                    "action": { "type": "hide", "audio": "sand" }
+                }],
+                "restitution": 0.5,
+                "surface": false
+            }
+        },
+        "Custom-gravity": {
+            "url": "./resources/models/custom-grav.glb",
+            "userData": {
+                "body": "sensor",
+                "friction": 0.025,
+                "hitbox": [{
+                    "action": { "type": "grav", "audio": "resize" }
+                }],
+                "restitution": 0.5,
+                "surface": false,
+                "tags": "special",
+                "text": "0.5"
+            }
+        },
+        "TNT": {
+            "url": "./resources/models/tnt.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.025,
+                "hitbox": [
+                    { 
+                        "action": { "type": "force", "value": { "x": 0, "y": 0, "z": 1.55 }, "audio": "explosion" },
+                        "position": { "x": 0, "y": 0, "z": 0 }
+                    },
+                    { 
+                        "action": { "type": "hide", "audio": "cart-jump" },
+                        "position": { "x": 0, "y": 0, "z": 0 }
+                    }
+                ],
+                "restitution": 0.5,
+                "surface": false
+            }
+        },
+        "Large Fog": {
+            "url": "./resources/models/fog-large.glb",
+            "userData": {
+                "body": "sensor",
+                "friction": 0.025,
+                "hitbox": [{
+                    "action": { "type": "hide", "audio": "ice" }
+                }],
+                "restitution": 0.5,
+                "surface": false
+            }
+        },
+        "parking-space": {
+            "url": "./resources/models/parking.glb",
+            "userData": {
+                "body": "sensor",
+                "friction": 0.025,
+                "hitbox": [{
+                    "action": { "type": "exit", "audio": "cart-jump" }
+                }],
+                "restitution": 0.5,
+                "surface": false
+            }
+        },
+	"Magma": {
+            "url": "./resources/models/magma.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0,
+                                "hitbox": [
+                    { 
+                        "action": { "type": "force", "value": { "x": 0, "y": 0, "z": 0.85 }, "audio": "burn" },
+                        "position": { "x": 0, "y": 0, "z": 0 },
+                        "scale": { "x": 1.1, "y": 1.1, "z": 1.1 }
+                    },
+                    { 
+                        "action": { "type": "ignite", "audio": "burn" },
+                        "position": { "x": 0, "y": 0, "z": 0 },
+                        "scale": { "x": 1.1, "y": 1.1, "z": 1.1 }
+                    }
+                ],
+                "restitution": 0.45
+            }
+        },
+	"spring": {
+            "url": "./resources/models/spring.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": -1, "audio": "cart-jump" }
+                }]
+            }
+        },
+        "resize-big": {
+            "url": "./resources/models/resize.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "scale", "value": 1.25, "audio": "resize" }
+                }],
+                "scale": { "x": 1.5, "y": 1.5, "z": 1.5 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "resize-massive": {
+            "url": "./resources/models/resize.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "scale", "value": 2, "audio": "resize" }
+                }],
+                "scale": { "x": 2, "y": 2, "z": 2 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 1.25, "y": 1.25, "z": 1.25 }
+                }
+            }
+        },
+        "resize-default": {
+            "url": "./resources/models/resize.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "scale", "value": 0.5, "audio": "resize" }
+                }],
+                "scale": { "x": 1, "y": 1, "z": 1 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "resize-small": {
+            "url": "./resources/models/resize.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "scale", "value": 0.25, "audio": "resize" }
+                }],
+                "scale": { "x": 0.5, "y": 0.5, "z": 0.5 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "resize-tiny": {
+            "url": "./resources/models/resize.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "scale", "value": 0.15, "audio": "resize" }
+                }],
+                "scale": { "x": 0.25, "y": 0.25, "z": 0.25 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 0.25, "y": 0.25, "z": 0.25 }
+                }
+            }
+        },
+        "select": { "url": "./resources/models/select.glb" },
+        "street": {
+            "url": "./resources/models/street.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.15,
+                "restitution": 0
+            }
+        },
+        "snow-fairway": {
+            "url": "./resources/models/snow-fairway.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.4,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "restitution": 0.45
+            }
+        },
+        "snow-green": {
+            "url": "./resources/models/snow-green.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.25,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-fairway" }}],
+                "restitution": 0.25
+            }
+        },
+        "snow-ball-bottom": {
+            "url": "./resources/models/snow-ball-bottom.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "snow-ball-center": {
+            "url": "./resources/models/snow-ball-center.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "snow-ball-top": {
+            "url": "./resources/models/snow-ball-top.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "snow-rough": {
+            "url": "./resources/models/snow-rough.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.5,
+                "hitbox": [{ "action": { "type": "audio", "audio": "grass-rough" }}],
+                "restitution": 0.25
+            }
+        },
+        "snow-sand": {
+            "url": "./resources/models/snow-sand.glb",
+            "userData": {
+                "body": "static",
+                "friction": 1,
+                "hitbox": [{ "action": { "type": "audio", "audio": "sand" }}],
+                "restitution": 0.1
+            }
+        },
+        "speed": {
+            "url": "./resources/models/speed.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "speed" }
+                }],
+                "tags": "special",
+                "text": "1.5"
+            }
+        },
+        "tee": {
+            "url": "./resources/models/tee.glb",
+            "userData": {
+                "body": "sensor",
+                "order": 8,
+                "tags": "special",
+                "thumbnail": {
+                    "position": { "x": 0, "y": 0, "z": 0.5 },
+                    "scale": { "x": 2, "y": 2, "z": 2 }
+                }
+            }
+        },
+        "tip": {
+            "url": "./resources/models/tip.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "tip", "audio": "teleport" }
+                }],
+                "order": 5,
+                "tags": "special",
+                "text": "Howdy!"
+            }
+        },
+        "custom-scale": {
+            "url": "./resources/models/c-scale.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "customscale", "audio": "teleport" }
+                }],
+                "tags": "special",
+                "text": "2"
+            }
+        },
+        "tree-aspen-bottom": {
+            "url": "./resources/models/tree-aspen-bottom.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-aspen-center": {
+            "url": "./resources/models/tree-aspen-center.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-aspen-top": {
+            "url": "./resources/models/tree-aspen-top.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "position": { "x": 0, "y": 0, "z": -0.1 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "tree-hell-bottom": {
+            "url": "./resources/models/tree-hell-bottom.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [
+                    { "action": { "type": "slow", "value": 0.75, "audio": "tree" }},
+                    { "action": { "type": "ignite", "audio": "burn" }}
+                ],
+                "material": {
+                    "map": {
+                        "offset": { "x": -0.5, "y": 0.5 }
+                    },
+                    "name": "tree-fire"
+                },
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-hell-center": {
+            "url": "./resources/models/tree-hell-center.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [
+                    { "action": { "type": "slow", "value": 0.75, "audio": "tree" }},
+                    { "action": { "type": "ignite", "audio": "burn" }}
+                ],
+                "material": {
+                    "map": {
+                        "offset": { "x": -0.5, "y": 0.5 }
+                    },
+                    "name": "tree-fire"
+                },
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-hell-top": {
+            "url": "./resources/models/tree-hell-top.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [
+                    { "action": { "type": "slow", "value": 0.75, "audio": "tree" }},
+                    { "action": { "type": "ignite", "audio": "burn" }}
+                ],
+                "material": {
+                    "map": {
+                        "offset": { "x": -0.5, "y": 0.5 }
+                    },
+                    "name": "tree-fire"
+                },
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-moon-bottom": {
+            "url": "./resources/models/tree-moon-bottom.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-moon-center": {
+            "url": "./resources/models/tree-moon-center.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-moon-top": {
+            "url": "./resources/models/tree-moon-top.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "position": { "x": 0, "y": 0, "z": -0.1 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "tree-oak-bottom": {
+            "url": "./resources/models/tree-oak-bottom.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-oak-center": {
+            "url": "./resources/models/tree-oak-center.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-oak-top": {
+            "url": "./resources/models/tree-oak-top.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "position": { "x": 0, "y": 0, "z": -0.1 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "tree-pine-bottom": {
+            "url": "./resources/models/tree-pine-bottom.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "tree" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.75 }
+                }
+            }
+        },
+        "tree-pine-top": {
+            "url": "./resources/models/tree-pine-top.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "tree-pine-top-snow": {
+            "url": "./resources/models/tree-pine-top-snow.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "leaves" }
+                }],
+                "thumbnail": {
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "ufo": {
+            "url": "./resources/models/ufo.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "translate", "value": "ufo-animation", "audio": "ufo" },
+                    "position": { "x": 0, "y": 0, "z": -0 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 1 }
+                }],
+                "material": {
+                    "map": {
+                        "offset": { "x": 0, "y": 1 }
+                    },
+                    "name": "ufo-alpha"
+                },
+                "tags": "special",
+                "text": "4,4",
+                "thumbnail": {
+                    "position": { "x": 0, "y": 0, "z": -0.75 },
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "vent": {
+            "url": "./resources/models/vent.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.15,
+                "restitution": 0.75
+            }
+        },
+        "vent-bottom-left": {
+            "url": "./resources/models/vent-bottom-left.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "vent-bottom-right": {
+            "url": "./resources/models/vent-bottom-right.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "vent-horizontal": {
+            "url": "./resources/models/vent-horizontal.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "vent-spikes-down": {
+            "url": "./resources/models/vent-spikes.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": 0, "y": 0, "z": -0.5 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.25 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.75,
+                "rotation": { "x": 0, "y": 3.141592653589793, "z": 0 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 3.141592653589793, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "vent-spikes-left": {
+            "url": "./resources/models/vent-spikes.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": -0.5, "y": 0, "z": 0 },
+                    "scale": { "x": 0.25, "y": 0.75, "z": 0.75 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.75,
+                "rotation": { "x": 0, "y": -1.5707963267948966, "z": 0 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.5, "y": -1.5707963267948966, "z": 0 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "vent-spikes-right": {
+            "url": "./resources/models/vent-spikes.glb",
+            "userData": {
+                "body": "static",
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": 0.5, "y": 0, "z": 0 },
+                    "scale": { "x": 0.25, "y": 0.75, "z": 0.75 }
+                }],
+                "friction": 0.05,
+                "restitution": 0.75,
+                "rotation": { "x": 0, "y": 1.5707963267948966, "z": 0 },
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 1.5707963267948966, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "vent-spikes-up": {
+            "url": "./resources/models/vent-spikes.glb",
+            "userData": {
+                "body": "static",
+                "friction": 0.05,
+                "hitbox": [{ 
+                    "action": { "type": "kill", "text": "You died by spikes!<br>Penalty +1", "audio": "sword" },
+                    "position": { "x": 0, "y": 0, "z": 0.5 },
+                    "scale": { "x": 0.75, "y": 0.75, "z": 0.25 }
+                }],
+                "order": 7,
+                "restitution": 0.75,
+                "tags": "special",
+                "thumbnail": {
+                    "rotation": { "x": 0.25, "y": 0, "z": 0.25 },
+                    "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                }
+            }
+        },
+        "vent-top-left": {
+            "url": "./resources/models/vent-top-left.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "vent-top-right": {
+            "url": "./resources/models/vent-top-right.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "vent-vertical": {
+            "url": "./resources/models/vent-vertical.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "vent-wall": {
+            "url": "./resources/models/vent-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        },
+        "volcano": {
+            "url": "./resources/models/volcano.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [
+                    { 
+                        "action": { "type": "force", "value": { "x": 0, "y": 0, "z": 4 }, "audio": "burn" },
+                        "position": { "x": 0, "y": 0, "z": 0 },
+                        "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                    },
+                    { 
+                        "action": { "type": "ignite", "audio": "burn" },
+                        "position": { "x": 0, "y": 0, "z": 0 },
+                        "scale": { "x": 0.5, "y": 0.5, "z": 0.5 }
+                    }
+                ],
+                "material": {
+                    "map": {
+                        "offset": { "x": 0, "y": -0.25 }
+                    },
+                    "name": "volcano-lava"
+                }
+            }
+        },
+        "water": {
+            "url": "./resources/models/water.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "water" }
+                }],
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "water-hell": {
+            "url": "./resources/models/water-hell.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "water" }
+                }],
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "water-ice": {
+            "url": "./resources/models/water-ice.glb",
+            "userData": {
+                "animation": {
+                    "loop": true
+                },
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75, "audio": "water" }
+                }],
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "weeds": {
+            "url": "./resources/models/weeds.glb",
+            "userData": {
+                "body": "sensor",
+                "hitbox": [{ 
+                    "action": { "type": "slow", "value": 0.75 },
+                    "position": { "x": 0, "y": 0, "z": -0.25 },
+                    "scale": { "x": 1, "y": 1, "z": 0.5 }
+                }],
+                "thumbnail": {
+                    "rotation": { "x": 0, "y": 0, "z": 0 },
+                    "scale": { "x": 1, "y": 1, "z": 1 }
+                }
+            }
+        },
+        "wood": {
+            "url": "./resources/models/wood.glb",
+            "userData": {
+                "audio": "wood",
+                "body": "static",
+                "friction": 0.05,
+                "hitbox": [{ "action": { "type": "audio", "audio": "wood" }}],
+                "order": 4,
+                "restitution": 0.75
+            }
+        },
+        "wood-wall": {
+            "url": "./resources/models/wood-wall.glb",
+            "userData": {
+                "body": "sensor"
+            }
+        }
+    },
+    "textures": {
+        "snow": {
+            "url": "./resources/textures/snow.png"
+        },
+        "hell": {
+            "url": "./resources/textures/hell.png"
+        }
+    }
+}
