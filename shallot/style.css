@@ -58,6 +58,7 @@ header a{
     transition: all 0.2s ease-in-out;
     border-radius: 16px;
     margin: 5px;
+    background-size: contain;
 }
 
 .news img:hover{
@@ -139,7 +140,7 @@ footer{
     border-radius: 8px;
     transition: all .2s ease-in-out;
     flex:1;
-    margin-inline: 95px;
+    margin-inline: auto;
 }
 
 .navItems p{
@@ -207,7 +208,7 @@ footer{
 
 .content{
     display: grid;
-    grid-template-rows: 500px 500px 500px;
+    grid-template-rows: auto 500px 500px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "news1 news1 news1 news1"
@@ -217,5 +218,5 @@ footer{
 }
 
 .sideAds .ads{
-    margin-right: 50px;
+    margin-right: 45px;
 }
