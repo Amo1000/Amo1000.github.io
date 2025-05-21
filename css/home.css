@@ -1,0 +1,44 @@
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0px 9px rgba(0,0,0,0.25);
+    flex: 1;
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin: 4rem;
+    margin-inline: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cover{
+    background: url(https://amo1000.github.io/images/skate.png) no-repeat center center/cover;
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.cover .card{
+    margin-inline: auto+80;
+    max-width: 1000px;
+}
+
+.card img{
+    max-width: 65%;
+    height: auto;
+    width: auto\3;
+}
+
+.area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}

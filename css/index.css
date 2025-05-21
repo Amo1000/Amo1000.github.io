@@ -1,0 +1,114 @@
+@font-face {
+    font-family: sfpro;
+    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: sfpro;
+    src: url(../fonts/SFPRODISPLAYBOLD.OTF);
+    font-weight: bold;
+}
+
+*{
+    font-family: sfpro;
+}
+
+::selection{
+    color: #ececec;
+    background: #161616;
+}
+
+body{
+    background: #ececec;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    color: #161616;
+    background: rgb(255, 255, 255);
+}
+
+header h1{
+    font-size: 60px;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    backdrop-filter: brightness(2) blur(10px) grayscale(80%);
+    top: 0;
+    z-index: 5;
+    padding: 1.2rem 1rem;
+    transition: backdrop-filter 0.3s;
+    color: #161616;
+    font-size: 17px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 9px rgba(0,0,0,0.15);
+}
+
+nav a {
+    padding: 2px;
+    margin-inline: 10px;
+    color: #161616;
+    text-decoration: none;
+}
+
+img{
+    border-radius: 8px;
+}
+
+.content{
+    justify-content: left;
+}
+
+.card img{
+    transition: all 0.175s ease-out;
+}
+
+.card img:hover{
+    scale: 1.1;
+    box-shadow: 0 0px 9px rgba(0,0,0,0.15);
+}
+
+.title{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@keyframes gradientShift {
+    0% {
+      background-position: 200% center;
+    }
+    100% {
+      background-position: 0% center;
+    }
+}
+
+nav a{
+    transition: all 0.2s ease-in-out;
+    border-radius: 12px;
+    padding-block: 8px;
+}
+
+nav a span{
+    padding: 8px;
+}
+
+nav a:hover{
+    background: #ffffffb0;
+}
+
+nav a span:hover{
+    background: -webkit-linear-gradient(0deg,#38a0c9 0%, #57c785 25%, #79c9b5 50%, #57c785 75%, #38a0c9 100%);
+    background-size: 200% auto;
+    background-position: 100% center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s linear infinite;
+}

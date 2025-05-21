@@ -1,0 +1,30 @@
+img{
+    max-width: 10%;
+    height: auto;
+    width: auto\3;
+}
+
+body{
+    background: url(https://amo1000.github.io/images/skate.png) no-repeat center center/cover !important;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0px 9px rgba(0,0,0,0.25);
+    flex: 1;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 390px;
+    width: auto;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+nav{
+    background: #ffffff !important;
+}
