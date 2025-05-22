@@ -1,8 +1,19 @@
 img{
-    max-width: 45%;
+    max-width: 47%;
     height: auto;
     width: auto\3;
     border-radius: 6px;
+}
+
+#image{
+    z-index: 100;
+    position: relative;
+}
+
+#image2{
+    position: absolute;
+    right: 26.5%;
+    filter: blur(100px) saturate(300%) contrast(110%);
 }
 
 body{
@@ -15,6 +26,21 @@ a{
     cursor: pointer;
 }
 
+#src{
+    margin-top: 1px;
+    font-size: 10px;
+    z-index: 100;
+}
+
 #close{
     font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+}
+
+a#close:hover{
+    font-size: 25px;
+    color: #f7d3ce;
 }

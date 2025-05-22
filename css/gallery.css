@@ -1,6 +1,5 @@
 .card {
     background: rgb(255, 255, 255);
-    backdrop-filter: blur(10px);
     box-shadow: 0 0px 9px rgba(0,0,0,0.25);
     flex: 1;
     padding: 2rem;
