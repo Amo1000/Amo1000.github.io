@@ -7,6 +7,7 @@
     border-radius: 15px;
     margin: 4rem;
     margin-inline: 0.5rem;
+    margin-top: 0.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -34,6 +35,7 @@
     max-width: 65%;
     height: auto;
     width: auto\3;
+    cursor: pointer;
 }
 
 .area{
@@ -41,4 +43,10 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem;
+    margin-top: 0.5rem;
+}
+
+.largetext{
+    text-align: center;
+    margin: 2rem;
 }
