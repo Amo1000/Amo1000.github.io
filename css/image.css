@@ -13,7 +13,24 @@ img{
 #image2{
     position: absolute;
     right: 26.5%;
-    filter: blur(100px) saturate(300%) contrast(110%);
+    filter: blur(100px) saturate(250%) contrast(110%);
+    transition: all 0.2s ease-in-out;
+    animation: Pulse 5.5s linear infinite;
+}
+
+@keyframes Pulse {
+    0% {
+      filter: blur(100px) saturate(150%) contrast(110%);
+      -webkit-filter: blur(100px) saturate(150%) contrast(110%);
+    }
+    50% {
+      filter: blur(110px) saturate(270%) contrast(140%);
+      -webkit-filter: blur(110px) saturate(270%) contrast(140%);
+    }
+    100%{
+        filter: blur(100px) saturate(180%) contrast(110%);
+        -webkit-filter: blur(100px) saturate(150%) contrast(110%);
+    }
 }
 
 body{

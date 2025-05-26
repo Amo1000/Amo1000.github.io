@@ -39,6 +39,7 @@ nav {
     position: sticky;
     justify-content: center;
     backdrop-filter: brightness(2) blur(10px) grayscale(80%);
+    -webkit-backdrop-filter: brightness(2) blur(10px) grayscale(80%);
     top: 0;
     z-index: 5;
     padding: 1.2rem 1rem;
@@ -93,10 +94,13 @@ nav a{
 
 nav a span{
     padding: 8px;
+    animation: gradientShift 5.5s linear infinite;
+    transition: all 0.2s ease-in-out;
 }
 
 nav a:hover{
     background: #ffffffb0;
+    transition: all 0.2s ease-in-out;
 }
 
 nav a span:hover{
@@ -106,7 +110,6 @@ nav a span:hover{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientShift 4s linear infinite;
 }
 
 header h1{
@@ -117,4 +120,18 @@ header h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientShift 4s linear infinite;
+}
+
+.tape{
+    margin: 1.5rem;
+    margin-bottom: 0rem;
+    margin-inline: 0rem;
+    background-image: repeating-linear-gradient(
+        -55deg,
+        #2b2b2b,
+        #2b2b2b 40px,
+        #ffdd01 40px,
+        #ffdd01 80px
+    );
+    color: #00000000;
 }
