@@ -1,0 +1,48 @@
+.area{
+    margin-bottom: 0rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 a{
+    background: -webkit-linear-gradient(0deg,#38a0c9 0%, #57c785 25%, #79c9b5 50%, #57c785 75%, #38a0c9 100%);
+    background-size: 200% auto;
+    background-position: 100% center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s linear infinite;
+}
+
+.cover{
+    background: url(https://amo1000.github.io/images/skate.png) no-repeat center center/cover;
+    height: 40vh;
+    max-height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    padding: 70px;
+    padding-inline: 15px;
+}
+
+.cover .card{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0px 9px rgba(0,0,0,0.25);
+    flex: 1;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 3rem;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
