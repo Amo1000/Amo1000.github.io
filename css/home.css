@@ -15,7 +15,7 @@
 }
 
 .cover{
-    background: url(/images/cover.jpeg) no-repeat center center/cover;
+    background: url(/images/cover.png) no-repeat center center/cover;
     height: 65vh;
     background-position: center;
     background-repeat: no-repeat;
