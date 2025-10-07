@@ -51,3 +51,13 @@
     text-align: center;
     margin: 2rem;
 }
+
+.card a{
+  background: -webkit-linear-gradient(0deg,#38a0c9 0%, #57c785 25%, #79c9b5 50%, #57c785 75%, #38a0c9 100%);
+  background-size: 200% auto;
+  background-position: 100% center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s linear infinite;
+}
