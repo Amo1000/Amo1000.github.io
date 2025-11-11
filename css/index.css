@@ -113,7 +113,7 @@ nav a span:hover{
 }
 
 header h1{
-    background: -webkit-linear-gradient(0deg,#074057 0%, #011d1f 25%, #161616 50%, #011d1f 75%, #074057 100%);
+    background: -webkit-linear-gradient(0deg,#4c5707 0%, #011d1f 25%, #313042 50%, #011d1f 75%, #545707 100%);
     background-size: 200% auto;
     background-position: 100% center;
     background-clip: text;
