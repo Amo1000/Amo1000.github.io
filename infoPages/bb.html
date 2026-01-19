@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amo's page</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="info.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Amo's page</h1>
+    </header>
+    <nav>
+        <a href="../index.html"><span>Home</span></a>
+        <a href="../gallery.html"><span>Gallery</span></a>
+        <a href="../about.html"><span>About</span></a>
+        <a href="../commission.html"><span>Commission</span></a>
+    </nav>
+    <br>
+    <div class="body-content">
+        <h1>How to import blockbench models into blender</h1>
+        <img src="../images/Dandon_wireframe.png">
+        <p>For most of my renders, I use a program called blockbench which I use to make the low-poly characters and models</p>
+        <p>But importing the models into blender can be tricky as the models dont work as intended once put into blender</p>
+        <p>So here are the steps that I take that help me get models from blockbench into blender properly</p>
+        <h2>Step 1</h2>
+        <h3>Export model</h3>
+        <p>Get your blockbench model and go to File > Export > Export GLTF model</p>
+        <p>Make sure embed textured is checked and check export groups as armature if you want all of your meshes to be merged and for the program to auto rig your character/model</p>
+        <img src="images/blockbench_export.png">
+        <p>I find that GLTF is the easiest one to put into blender however you can pick another file type but the results will vary</p>
+        <h2>Step 2</h2>
+        <h3>Import into blender</h3>
+        <p>Now open blender and open a new default file</p>
+        <p>Delete the default cube and navigate to File > Import > Gltf 2.0</p>
+        <p>Now select the .gltf file you just exported</p>
+        <p>Your model should now be in blender</p>
+        <img src="images/blender_import.png">
+        <h2>Step 3</h2>
+        <h3>Merge edges</h3>
+        <p>When you import a model from blockbench into blender the faces become disconnected</p>
+        <p>To fix this select all of the meshes that have been imported and go into edit mode</p>
+        <p>Make sure that you are on either vertex or edge selection mode and press A then M</p>
+        <p>A merge popup should appear and you need to select 'By Distance'</p>
+        <img src="images/blender_merge.png">
+        <h2>Step 4</h2>
+        <h3>Reset normals</h3>
+        <p>Once the previous step is completed the normals (shading) of the model may look strange</p>
+        <p>To fix this, stay in edit mode and make sure everything is still selected</p>
+        <p>Navigate to Mesh > Normals and click on 'Reset Vectors'</p>
+        <img src="images/blender_vectors.png">
+        <p>Finally go back to object mode and right click the selected meshes and click shade flat</p>
+        <p>(this is optional but suggested if you want the model to look like how it was when it was originally imported)</p>
+        <h2>Thats All</h2>
+        <p>Hopefully this helped you if you wanted to know</p>
+        <img src="../images/Dandon.png">
+    </div>
+</body>
+</html>
