@@ -51,6 +51,13 @@
     cursor: pointer;
 }
 
+.card .smallImg{
+    max-width: 45%;
+    height: auto;
+    width: auto\3;
+    cursor: pointer;
+}
+
 .area{
     display: flex;
     flex-wrap: wrap;
