@@ -5,7 +5,7 @@ img{
 }
 
 body{
-    background: url(https://amo1000.github.io/images/sunny.gif) no-repeat top center !important;
+    background: url(https://amo1000.github.io/images/sunny.gif) no-repeat top center/cover !important;
 }
 
 .card {
