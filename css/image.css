@@ -61,3 +61,7 @@ a#close:hover{
     font-size: 25px;
     color: #f7d3ce;
 }
+
+.pixel{
+    image-rendering: pixelated;
+}

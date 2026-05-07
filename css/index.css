@@ -18,6 +18,16 @@
     background: #161616;
 }
 
+.blue::selection{
+    color: #006eff;
+    background: #161616;
+}
+
+.yellow::selection{
+    color: #eeff00;
+    background: #161616;
+}
+
 body{
     background: #ececec;
     margin: 0px;
@@ -139,4 +149,9 @@ header h1{
         #ffdd01 80px
     );
     color: #00000000;
+}
+
+.pixel{
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
