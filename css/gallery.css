@@ -81,13 +81,13 @@
 }
 
 .cardalt{
-    text-decoration: none !important;
+    text-decoration: none;
     color: #161616;
     margin-inline: 20%;
 }
 
 .cardalt img{
-    max-width: 35%;
+    max-width: 55%;
     height: auto;
     width: auto\3;
     cursor: pointer;
