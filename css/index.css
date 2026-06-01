@@ -155,3 +155,11 @@ header h1{
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }
+
+footer{
+    text-align: center;
+    color: #161616;
+    background: rgb(255, 255, 255);
+    padding: 0.5rem;
+    font-size: 14px;
+}
