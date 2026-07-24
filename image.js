@@ -7,3 +7,5 @@ let src = params.get("img");
 link.textContent = src;
 image.src = src;
 image2.src = src;
+
+document.querySelector("link[rel*='icon']").href = src;
