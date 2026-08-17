@@ -58,6 +58,13 @@
     cursor: pointer;
 }
 
+.smallerImg{
+    max-width: 25% !important;
+    height: auto !important;
+    width: auto\3 !important;
+    cursor: pointer !important;
+}
+
 .area{
     display: flex;
     flex-wrap: wrap;
