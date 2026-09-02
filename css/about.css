@@ -5,7 +5,8 @@ img{
 }
 
 body{
-    background: url(https://amo1000.github.io/images/sunny.gif) no-repeat top center/cover !important;
+    background: url(https://amo1000.github.io/images/standing.png) no-repeat top center/cover !important;
+    image-rendering: pixelated !important;
 }
 
 .card {
@@ -27,4 +28,11 @@ body{
 
 nav{
     background: #ffffff !important;
+}
+
+footer{
+    background: #ffffff26;
+    backdrop-filter: blur(15px) !important;
+    box-shadow: 0 0px 9px rgba(0,0,0,0.25) !important;
+    color: #fff !important;
 }
